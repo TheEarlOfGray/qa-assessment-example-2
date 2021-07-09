@@ -1,22 +1,24 @@
-    # <QUESTION 1>
+# <QUESTION 1>
 
-    # Given a word and a string of characters, return the word with all of the given characters
-    # replaced with underscores
+# Given a word and a string of characters, return the word with all of the given characters
+# replaced with underscores
 
-    # This should be case sensitive
+# This should be case sensitive
 
-    # <EXAMPLES>
+# <EXAMPLES>
 
-    # one("hello world", "aeiou") → "h_ll_ w_rld"
-    # one("didgeridoo", "do") → "_i_geri___"
-    # one("punctation, or something?", " ,?") → "punctuation__or_something_"
+# one("hello world", "aeiou") → "h_ll_ w_rld"
+# one("didgeridoo", "do") → "_i_geri___"
+# one("punctation, or something?", " ,?") → "punctuation__or_something_"
 
 def one(word, chars):
-    pass
+    for i in chars:
+        word = word.replace(i, "_")
+    return word
 
     # <QUESTION 2>
 
-    # Given an integer - representing total seconds - return a tuple of integers (of length 4) representing 
+    # Given an integer - representing total seconds - return a tuple of integers (of length 4) representing
     # days, hours, minutes, and seconds
 
     # <EXAMPLES>
@@ -28,6 +30,7 @@ def one(word, chars):
     # <HINT>
 
     # There are 86,400 seconds in a day, and 3600 seconds in an hour
+
 
 def two(total_seconds):
     pass
@@ -46,6 +49,7 @@ def two(total_seconds):
 
     # Dictionaries have methods that can be used to get their keys, values, or items
 
+
 def three(dictionary):
     pass
 
@@ -63,6 +67,7 @@ def three(dictionary):
     # four(7) → 1
     # four(-10) → 5
 
+
 def four(number):
     pass
 
@@ -75,6 +80,7 @@ def four(number):
     # five('abcdef') → 'a'
     # four('LoremIpsum') → 'I'
     # four('hello world!') → ' '
+
 
 def five(chars):
     pass
@@ -91,6 +97,7 @@ def five(chars):
     # six('hello world, how are you?', 12) → ['hello world,', 'how are you?']
     # six('hello world, how are you?', 6) → ['hello', 'world,', 'how', 'are', 'you?']
     # six('hello world, how are you?', 20) → ['hello world, how are', 'you?']
-    
+
+
 def six(paragraph, limit):
     pass
