@@ -113,7 +113,11 @@ def four(number):
 
 
 def five(chars):
-    pass
+    result = chars[0]
+    for i in chars:
+        if ord(i) < ord(result):
+            result = i
+    return result
 
     # <QUESTION 6>
 
