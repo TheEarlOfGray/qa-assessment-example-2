@@ -87,7 +87,19 @@ def three(dictionary):
 
 
 def four(number):
-    pass
+    result = 0
+    if number > 1:
+        for i in range(1, number):
+            if (number % i) == 0:
+                result = i
+    elif number == 1:
+        result = 1
+    else:
+        number = number * -1
+        for i in range(1, number):
+            if (number % i) == 0:
+                result = i
+    return result
 
     # <QUESTION 5>
 
