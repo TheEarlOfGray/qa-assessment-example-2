@@ -33,7 +33,22 @@ def one(word, chars):
 
 
 def two(total_seconds):
-    pass
+    val1 = 0
+    val2 = 0
+    val3 = 0
+    val4 = 0
+    while total_seconds >= 86400:
+        total_seconds = total_seconds - 86400
+        val1 += 1
+    while total_seconds >= 3600:
+        total_seconds = total_seconds - 3600
+        val2 += 1
+    while total_seconds >= 60:
+        total_seconds = total_seconds - 60
+        val3 += 1
+    val4 = total_seconds
+    result = (val1, val2, val3, val4)
+    return result
 
     # <QUESTION 3>
 
