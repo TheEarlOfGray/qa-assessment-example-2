@@ -66,7 +66,10 @@ def two(total_seconds):
 
 
 def three(dictionary):
-    pass
+    result = {}
+    for i in dictionary:
+        result[dictionary[i]] = i
+    return result
 
     # <QUESTION 4>
 
